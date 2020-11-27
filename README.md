@@ -1,6 +1,6 @@
 # PowerShell
 
-Random scripts I created or modified from another source to meet our customer needs
+Random/basic scripts I created or modified from another source to meet our customer needs
 
 1. archive-zip-move-delete.ps1
 
