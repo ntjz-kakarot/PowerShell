@@ -1,11 +1,12 @@
-# PowerShell
+## PowerShell Scripts
 
-Random/basic scripts I created or modified from another source to meet our customer needs
+These are random/basic scripts I created or modified from other sources to meet specific customer needs.
 
-1. archive-zip-move-delete.ps1
+### 1. archive-zip-move-delete.ps1
+**Description:** One of our customers required a simple solution to compress their archived security logs in the Domain Controllers and send them to a file share folder. Once moved, the event log should be removed from the original location. This script provides that functionality and can be integrated with the Task Scheduler for automation.
 
-*One of our customers required a simple solution to compress their archived security logs in the Domain Controllers and send them to a file share folder. Once moved, the event log should be removed from the original location. Can be integrated with the Task Scheduler to automate the process.*
+### 2. desktopFileMove.ps1
+**Description:** During an audit review, a customer organization was advised to enforce an org-wide clean desktop policy. Initially, I tried implementing a GPO to deny write access to users' desktops. However, this approach presented potential long-term problems. As an alternative, I experimented with `cacls/icacls`. While it addressed the issue, I eventually settled on a script I found online. The original script was heavily modified to match the customer's specifications and was implemented as a logon script.
 
-2. desktopFileMove.ps1
-
-*In an audit review, a customer organization was asked to have an org-wide clean desktop policy. At first, I tired to implement a GPO that would deny write access to the desktop for users, but this was bound to be problematic in the long run. Then tried cacls/icacls. Eventhough that addressed the issue, I ended up with this script that I found on a website. The original script has been heavily modified to match the customer's need. This was implemented as a logon script*
+### 3. automated_ODT.ps1
+**Description:** Isn't it annoying to install all the bloat from a standard Office ProPlus 2021 license? In that case, this script will come in handy. It will just install Word, Excel and Powerpoint.
